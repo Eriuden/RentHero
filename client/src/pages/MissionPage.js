@@ -5,8 +5,9 @@ import { useSelector } from 'react-redux';
 import AcceptButton from '../Component/AcceptButton';
 
 
-export default function MissionPage({mission}) {
+export default function MissionPage() {
   const user = useSelector((state) =>state.userReducer)
+  const mission = useSelector((state) =>state.missionReducer)
   const dispatch = useDispatch()
 
   useEffect(() => {
